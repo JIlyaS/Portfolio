@@ -51,7 +51,8 @@
     "start": "gulp start",
     "build": "gulp build",
     "lighthouse": "gulp build && gulp lighthouse",
-    "test": "editorconfig-cli & stylelint ./src/styles/**/*.scss --syntax scss & eslint ./src/js",
+    "test": "stylelint ./src/styles/**/*.scss --syntax scss",
+    "test::js": "eslint ./src/js",
     "stylelint-fix": "stylelint ./src/styles/**/*.scss --fix --syntax scss",
     "eslint-fix": "eslint ./src/js/** --fix"
   },
