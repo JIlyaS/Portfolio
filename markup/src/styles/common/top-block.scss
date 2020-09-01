@@ -1,0 +1,17 @@
+.top-block {
+    width: 100%;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        height: calc(100vh - 75px);
+        margin: 0 150px;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: $main-thin-font;
+        color: $white;
+        font-size: 60px;
+    }
+}

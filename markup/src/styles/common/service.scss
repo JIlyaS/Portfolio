@@ -1,0 +1,147 @@
+.service {
+  background-color: $main-color;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+
+    @media (min-width: $tablet-width) {
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 50px 150px;
+    }
+  }
+
+  &__title {
+    width: min-content;
+    max-width: 330px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    padding-left: 80px;
+    margin-bottom: 60px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 90px;
+      padding-right: 15px;
+      width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 130px;
+      padding-right: 0;
+      width: 50%;
+    }
+
+
+    &--front,
+    &--frameworks,
+    &--fullstack,
+    &--utils {
+      &:before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 0;
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-image: url('../img/svg/html-icon.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-width: $tablet-width) {
+          left: 0;
+        }
+    
+        @media (min-width: $desktop-width) {
+          left: 25px;
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    &--front {
+      &:before {
+        background-image: url('../img/svg/html-icon.svg');
+      }
+    }
+
+    &--frameworks {
+      &:before {
+        background-image: url('../img/svg/react-icon.svg');
+      }
+    }
+
+    &--fullstack {
+      &:before {
+        width: 80px;
+        height: 80px;
+        background-image: url('../img/svg/node-icon.svg');
+
+        @media (min-width: $desktop-width) {
+          width: 90px;
+          height: 90px;
+        }
+      }
+    }
+
+    &--utils {
+      &:before {
+        background-image: url('../img/svg/typescript-icon.svg');
+      }
+    }
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item:nth-of-type(3) {
+    margin-bottom: 60px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__header {
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-family: $main-bold-font;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: $white;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: $main-thin-font;
+    font-size: 14px;
+    line-height: 20px;
+    color: $white;
+  }
+}
