@@ -1,0 +1,24 @@
+.btn {
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    &--border {
+        height: 30px;
+        padding: 0 10px;
+        color: $main-color;
+        background-color: transparent;
+        border-radius: 6px;
+        border: 2px solid $main-color;
+
+        &:hover {
+            color: $white;
+            border-color: $white;
+        }
+    }
+
+    &--empty {
+        border: none;
+        background-color: transparent;
+    }
+}
