@@ -1,6 +1,14 @@
-@import "./global/global";
+@import "./global/_variables";
 
-@import "./global/variables";
+@import "./global/_fonts";
+
+@import "./global/_mixins";
+
+@import "./global/_global";
+
+@import "./common/link";
+
+@import "./common/btn";
 
 @import "./common/header";
 
