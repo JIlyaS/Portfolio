@@ -19,10 +19,10 @@
   }
 
   &__title {
-    width: min-content;
     max-width: 330px;
     margin-right: 20px;
     margin-bottom: 50px;
+    line-height: 42px;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;

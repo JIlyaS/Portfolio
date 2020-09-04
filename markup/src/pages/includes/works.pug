@@ -1,0 +1,26 @@
+-
+  var works = [
+    {id: 1,name: "Glacy",img: "#",date: "20.06.2020",content: "",link: "#"},
+    {id: 1,name: "Pink",img: "#",date: "20.06.2020",content: "",link: "#"},
+    {id: 1,name: "Pink",img: "#",date: "20.06.2020",content: "",link: "#"},
+    {id: 1,name: "Pink",img: "#",date: "20.06.2020",content: "",link: "#"},
+    {id: 1,name: "Pink",img: "#",date: "20.06.2020",content: "",link: "#"},
+    {id: 1,name: "Pink",img: "#",date: "20.06.2020",content: "",link: "#"}
+  ]
+
+section.works
+    .works__wrap
+        .works__block
+            h2.title.works__title Мои работы.
+        .works__block
+            .works__list
+                each work in works
+                    article.work
+                        a.work__link(href=work.link)
+                            img.work__img(src=work.img, alt="Работа")
+                            .work__content
+                                h3.work__title=work.name
+                                span.work__date=work.date
+                                p.work__text=work.content
+
+

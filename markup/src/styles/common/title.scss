@@ -1,11 +1,19 @@
 .title {
   display: inline-block;
+  width: min-content;
   margin: 0;
   padding-bottom: 18px;
 
   font-family: $main-bold-font;
   font-size: 60px;
-  line-height: 42px;
-  color: $white;
-  border-bottom: 8px solid $white;
+
+  &--white {
+    color: $white;
+    border-bottom: 8px solid $white;
+  }
+
+  &--black {
+    color: $title-color;
+    border-bottom: 8px solid $title-color;
+  }
 }
