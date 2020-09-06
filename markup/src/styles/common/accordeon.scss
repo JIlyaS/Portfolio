@@ -1,0 +1,50 @@
+.accordeon {
+
+  &__list {
+    @include list-reset;
+  }
+
+  &__item {
+    &--active {
+      .accordeon__tabs-title {
+        color: $main-color;
+      }
+      .accordeon__tabs-content {
+        display: block;
+      }
+    }
+  }
+
+  &__tabs {
+    width: 370px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 65px;
+    background-color: transparent;
+    border: 1px solid $back-main-color;
+    border-radius: 8px;
+    text-align: left;
+
+    cursor: pointer;
+  }
+
+  &__tabs-title {
+    font-family: $main-bold-font;
+    font-size: 14px;
+    color: $article-text-color;
+  }
+
+  &__tabs-content {
+    display: none;
+  }
+
+  &__tabs-text {
+    margin: 0;
+    padding: 10px 0 15px 20px;
+
+    font-family: $main-thin-font;
+    font-size: 14px;
+    line-height: 22px;
+    color: $article-text-color;
+  }
+}
