@@ -1,15 +1,57 @@
 .works {
-  background-color: $back-work-color;
+  background-color: $back-main-color;
 
   &__wrap {
-    padding: 50px 50px 75px;
+    padding: 50px 30px 75px;
 
     @media (min-width: $tablet-width) {
-
+      padding: 50px 50px 75px;
     }
 
     @media (min-width: $desktop-width) {
       padding: 75px 150px 140px;
     }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    padding-bottom: 12px;
+    line-height: 50px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list-wrap {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 580px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      width: auto;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__btn-wrap {
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  &__btn-more {
+    height: 35px;
+    padding: 0 12px;
   }
 }

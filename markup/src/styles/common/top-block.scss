@@ -5,7 +5,15 @@
         display: flex;
         align-items: center;
         height: calc(100vh - 75px);
-        margin: 0 150px;
+        padding: 0 30px;
+
+        @media (min-width: $tablet-width) {
+            padding: 0 50px;
+        }
+    
+        @media (min-width: $desktop-width) {
+            padding: 0 150px;
+        }
     }
 
     &__title {
