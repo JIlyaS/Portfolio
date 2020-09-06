@@ -1,9 +1,17 @@
-@import "./global/global";
+@import "./global/_variables";
+@import "./global/_fonts";
+@import "./global/_mixins";
+@import "./global/_global";
 
-@import "./global/variables";
-
+@import "./common/link";
+@import "./common/btn";
+@import "./common/wrapper";
+@import "./common/title";
 @import "./common/header";
-
 @import "./common/logo";
-
 @import "./common/nav";
+@import "./common/top-block";
+@import "./common/service";
+@import "./common/works";
+@import "./common/work";
+@import "./common/skills";

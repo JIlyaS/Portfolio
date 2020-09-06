@@ -2,6 +2,73 @@
     background-color: $black;
 
     &__wrap {
+        position: relative;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: $tablet-width) {
+            padding: 0 30px;
+        }
+
+        @media (min-width: $desktop-width) {
+            justify-content: flex-start;
+            padding: 0 150px;
+        }
+    }
+
+    &__btn-block {
+        margin-left: auto;
+        margin-right: 20px;
+
+        @media (min-width: $tablet-width) {
+            display: flex;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @media (min-width: $desktop-width) {
+            margin-left: auto;
+        }
+    }
+
+    &__btn-lang {
+        display: none;
+
+        @media (min-width: $tablet-width) {
+            display: block;
+        }
+    }
+
+    &__btn-burger {
+        display: block;
+        width: 30px;
+        height: 30px;
+
+        @media (min-width: $tablet-width) {
+            display: none;
+        }
+
+        svg {
+            width: 30px;
+            height: 30px;
+            fill: $white;
+        }
+    }
+
+    .header__btn-cross {
+        display: block;
+        width: 25px;
+        height: 25px;
+
+        @media (min-width: $tablet-width) {
+            display: none;
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+            fill: $white;
+        }
     }
 }

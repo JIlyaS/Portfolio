@@ -1,0 +1,20 @@
+.title {
+  display: inline-block;
+  width: 250px;
+  // width: min-content;
+  margin: 0;
+
+
+  font-family: $main-bold-font;
+  font-size: 60px;
+
+  &--white {
+    color: $white;
+    border-bottom: 8px solid $white;
+  }
+
+  &--black {
+    color: $title-color;
+    border-bottom: 8px solid $title-color;
+  }
+}

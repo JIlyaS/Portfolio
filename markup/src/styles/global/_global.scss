@@ -1,1 +1,58 @@
 @import "../../../node_modules/normalize.css/normalize";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $main-font;
+    font-size: 16px;
+    background-color: $gray;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+html {
+	font-size: 16px;
+
+	&::before {
+			content: '';
+			display: none;
+	}
+	
+	@media (max-width: $desktop-width) {
+        font-size: 16 / 680 * 100vw;
+
+        @media (min-aspect-ratio: 680/320) {
+            font-size: 16 / 320 * 100vh;
+        }
+
+        &::before {
+            content: 'desktop';
+            display: none;
+        }
+	}
+
+	@media (max-width: $tablet-width) {
+        font-size: 16 / 320 * 100vw;
+        &::before {
+            content: 'tablet';
+            display: none;
+        }
+	}
+}
