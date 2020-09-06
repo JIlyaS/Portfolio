@@ -3,6 +3,7 @@
     padding: 0;
     transition: 0.3s;
     cursor: pointer;
+
     &--border {
         height: 30px;
         padding: 0 10px;
@@ -14,6 +15,14 @@
         &:hover {
             color: $white;
             border-color: $white;
+        }
+    }
+
+    &--reverse {
+        &:hover {
+            color: $gray;
+            border-color: $gray;
+            background-color: $white;
         }
     }
 

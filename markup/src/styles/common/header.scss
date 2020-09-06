@@ -8,12 +8,12 @@
         align-items: center;
 
         @media (min-width: $tablet-width) {
-            margin: 0 30px;
+            padding: 0 30px;
         }
 
         @media (min-width: $desktop-width) {
             justify-content: flex-start;
-            margin: 0 150px;
+            padding: 0 150px;
         }
     }
 
