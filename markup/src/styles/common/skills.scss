@@ -1,0 +1,131 @@
+.skills {
+    background-color: $white;
+    &__wrap {
+        padding: 50px 30px 75px;
+    
+        @media (min-width: $tablet-width) {
+          padding: 50px 50px 75px;
+        }
+    
+        @media (min-width: $desktop-width) {
+          padding: 75px 150px 140px;
+        }
+    }
+    
+    &__title {
+        margin-bottom: 50px;
+        padding-bottom: 12px;
+        line-height: 42px;
+
+        @media (min-width: $desktop-width) {
+            margin-bottom: 75px;
+        }
+    }
+
+    &__content {
+        @media (min-width: $tablet-width) {
+            margin-right: 30px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $tablet-width) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__graph-list {
+        @include list-reset;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+
+        @media (min-width: $tablet-width) {
+            max-width: 500px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: $desktop-width) {
+            flex-wrap: nowrap;
+            
+            max-width: 770px;
+            margin: 0;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__graph-item {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-right: 10px;
+
+        cursor: pointer;
+
+        @media (min-width: $desktop-width) {
+            margin-bottom: 0;
+            margin-right: 10px;
+            padding-right: 0;
+        }
+    }
+
+    &__graph {
+        min-width: 90px;
+        min-height: 90px;
+
+        @media (min-width: $desktop-width) {
+            min-width: 120px;
+            min-height: 120px;
+        }
+    }
+
+    &__text-block {
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media (min-width: $tablet-width) {
+            width: auto;
+            max-width: 500px;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $desktop-width) {
+            max-width: 770px;
+        }
+    }
+
+    &__header {
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: $main-bold-font;
+        font-size: 18px;
+        color: $main-color;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 0;
+
+        font-family: $main-thin-font;
+        color: $title-color;
+    }
+
+    &__aside {
+        width: 100%;
+        @media (min-width: $tablet-width) {
+            width: auto;
+            max-width: 350px;
+        }
+
+        @media (min-width: $desktop-width) {
+            max-width: 370px;
+        }
+    }
+}

@@ -1,12 +1,15 @@
 .title {
   display: inline-block;
   width: 250px;
-  // width: min-content;
   margin: 0;
 
-
   font-family: $main-bold-font;
-  font-size: 60px;
+  font-size: 50px;
+  line-height: 42px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 
   &--white {
     color: $white;
@@ -16,5 +19,14 @@
   &--black {
     color: $title-color;
     border-bottom: 8px solid $title-color;
+  }
+
+  &--no-border {
+    color: $title-color;
+  }
+
+  &--small {
+    font-size: 42px;
+    line-height: 48px;
   }
 }

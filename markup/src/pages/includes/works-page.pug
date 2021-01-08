@@ -5,15 +5,21 @@
     {id: 3,name: "Candy shop",img: "./img/projects/candyshop-project.jpg",text: "HTML Academy",date: "(Октябрь 10, 2018)",link: "#"},
     {id: 4,name: "Kinoman",img: "./img/projects/kinoman-project.jpg",text: "HTML Academy",date: "(Октябрь 10, 2019)",link: "#"},
     {id: 5,name: "Six cities",img: "./img/projects/six-cities-project.jpg",text: "HTML Academy",date: "(Декабря 19, 2019)",link: "#"},
-    {id: 6,name: "Pink",img: "./img/projects/pink-project.png",text: "HTML Academy",date: "(Октября 01, 2020)",link: "#"}
+    {id: 6,name: "Pink",img: "./img/projects/pink-project.png",text: "HTML Academy",date: "(Октября 01, 2020)",link: "#"},
+    {id: 7,name: "Gllacy",img: "./img/projects/gllacy-project.jpg",text: "HTML Academy",date: "(Апрель 04, 2018)",link: "#"},
+    {id: 8,name: "Cat enegry",img: "./img/projects/cat-energy-project.jpg",text: "HTML Academy",date: "(Май 16, 2018)",link: "#"},
+    {id: 9,name: "Candy shop",img: "./img/projects/candyshop-project.jpg",text: "HTML Academy",date: "(Октябрь 10, 2018)",link: "#"},
+    {id: 10,name: "Kinoman",img: "./img/projects/kinoman-project.jpg",text: "HTML Academy",date: "(Октябрь 10, 2019)",link: "#"},
+    {id: 11,name: "Six cities",img: "./img/projects/six-cities-project.jpg",text: "HTML Academy",date: "(Декабря 19, 2019)",link: "#"},
+    {id: 12,name: "Pink",img: "./img/projects/pink-project.png",text: "HTML Academy",date: "(Октября 01, 2020)",link: "#"}
   ]
 
-section.works
-    .works__wrap.wrapper
-        .works__title-wrap
-            h2.title.title--black.works__title Мои работы.
-        .works__list-wrap
-            .works__list
+section.works-page
+    .works-page__wrap.wrapper
+        .works-page__title-wrap
+            h2.title.title--no-border.title--small.works-page__title Проекты
+        .works-page__list-wrap
+            .works-page__list
                 each work in works
                     article.work
                         a.work__link(href=work.link)
@@ -23,7 +29,3 @@ section.works
                                 .work__text-wrap
                                     span.work__text=work.text
                                     span.work__text=work.date
-        .works__btn-wrap
-            button.btn.btn--border.btn--reverse.works__btn-more Все работы
-
-

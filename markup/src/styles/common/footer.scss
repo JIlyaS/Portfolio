@@ -1,0 +1,20 @@
+.footer {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 20px;
+
+    text-align: center;
+    background-color: $footer-color;
+  }
+
+  &__logo {
+    justify-content: center;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 22px;
+    color: $gray;
+  }
+}
