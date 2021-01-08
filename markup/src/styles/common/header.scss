@@ -17,6 +17,20 @@
         }
     }
 
+    &__logo {
+        height: 75px;
+        margin-left: 20px;
+
+        @media (min-width: $tablet-width) {
+            margin-right: 40px;
+            margin-left: 0;
+        }
+    
+        @media (min-width: $desktop-width) {
+            margin-right: 130px;
+        }
+    }
+
     &__btn-block {
         margin-left: auto;
         margin-right: 20px;

@@ -1,0 +1,20 @@
+section.contact-me
+    .contact-me__wrap
+        .contact-me__title-wrap
+            h2.title.title--black.contact-me__title Связаться со мной.
+        ul.contact-me__social-list
+            li.contact-me__social-item
+                a.contact-me__social-link(href="#") 1
+            li.contact-me__social-item
+                a.contact-me__social-link(href="#") 2
+            li.contact-me__social-item 
+                a.contact-me__social-link(href="#") 3
+        .contact-me__form
+            form(action="/message", method="post")
+                .contact-me__form-wrap
+                    .contact-me__input-block
+                        input.input.contact-me__input(name="email", placeholder="email")
+                        input.input.contact-me__input(name="name", placeholder="имя")
+                    textarea.textarea.contact-me__textarea(name="message", rows="3", placeholder="сообщение")
+                .contact-me__submit-wrap
+                    button.btn.btn--submit.contact-me__submit(type="button") Отправить

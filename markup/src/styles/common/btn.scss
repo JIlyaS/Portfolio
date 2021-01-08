@@ -30,4 +30,11 @@
         border: none;
         background-color: transparent;
     }
+
+    &--submit {
+        color: $main-color;
+        background-color: $white;
+        border: none;
+        border-radius: 5px;
+    }
 }

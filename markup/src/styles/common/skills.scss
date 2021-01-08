@@ -23,33 +23,82 @@
     }
 
     &__content {
-        margin-right: 30px;
+        @media (min-width: $tablet-width) {
+            margin-right: 30px;
+        }
     }
 
     &__block {
         display: flex;
+        flex-direction: column;
+
+        @media (min-width: $tablet-width) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__graph-list {
         @include list-reset;
         display: flex;
         justify-content: space-between;
-        max-width: 770px;
-        margin-bottom: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+
+        @media (min-width: $tablet-width) {
+            max-width: 500px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: $desktop-width) {
+            flex-wrap: nowrap;
+            
+            max-width: 770px;
+            margin: 0;
+            margin-bottom: 50px;
+        }
     }
 
     &__graph-item {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-right: 10px;
+
         cursor: pointer;
+
+        @media (min-width: $desktop-width) {
+            margin-bottom: 0;
+            margin-right: 10px;
+            padding-right: 0;
+        }
     }
 
     &__graph {
-        width: 170px;
-        height: 170px;
+        min-width: 90px;
+        min-height: 90px;
+
+        @media (min-width: $desktop-width) {
+            min-width: 120px;
+            min-height: 120px;
+        }
     }
 
     &__text-block {
-        max-width: 770px;
-        padding-left: 100px;
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media (min-width: $tablet-width) {
+            width: auto;
+            max-width: 500px;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $desktop-width) {
+            max-width: 770px;
+        }
     }
 
     &__header {
@@ -69,6 +118,14 @@
     }
 
     &__aside {
-        max-width: 370px;
+        width: 100%;
+        @media (min-width: $tablet-width) {
+            width: auto;
+            max-width: 350px;
+        }
+
+        @media (min-width: $desktop-width) {
+            max-width: 370px;
+        }
     }
 }
